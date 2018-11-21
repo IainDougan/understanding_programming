@@ -31,6 +31,14 @@ def number_of_countries_in_europe(countries)
 end
 
 
+def population_density( country )
+  if (country['area'] && country['population'])
+    density = country['population'] / country['area']
+  end
+  return density || 'No data'
+end
+
+
 def population_of_asia(countries)
   #YOUR CODE HERE
   #Hint: Will need to use for loop and conditionals
